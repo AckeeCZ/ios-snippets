@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ack_table_delegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension &lt;#Class#&gt; : UITableViewDelegate {
+    //MARK: UITableViewDelegate
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat {
+        return &lt;#height#&gt;
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -&gt; CGFloat {
+        return &lt;#height#&gt;
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -&gt; CGFloat {
+        return &lt;#height#&gt;
+    }
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -&gt; UIView? {
+        
+    }
+    
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -&gt; UIView? {
+        
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>717DB4F6-1DBA-40E7-8C27-CC2827C4322A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Table Delegat</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

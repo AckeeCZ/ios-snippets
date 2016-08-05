@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>layout-weakvar</string>
+	<string>mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>weak var &lt;#name#&gt;: &lt;#type#&gt;!</string>
+	<string>// MARK: &lt;#Section#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>45B32802-8E85-4BE5-BCA1-413400AC9199</string>
+	<string>B8DE1B23-8B6D-4EC9-A6B8-B63EDDB41994</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Layout - Weak view</string>
+	<string>Mark</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
