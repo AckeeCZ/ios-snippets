@@ -13,7 +13,7 @@ In the root you will find
 - Snippets folder (where actual snippets for xcode are located)
 
 ## Usage 
-You will need [Fastlane][1]for running the script. once installed go to the root of the repo and try one of theese commands
+You will need [Fastlane][1] for running the script. once installed go to the root of the repo and try one of theese commands
 
 ### Install
 This command will install all snippets **from** repository to your Xcode. Installation process will override older versions of snippets with same name.
@@ -35,7 +35,7 @@ if you want to share just one particular snippet you can call
 ```
 fastlane upload_snippet key:xcode-abbr
 ```
-`where `xcode-abbr` is key of your snippet within Xcode. 
+where `xcode-abbr` is key of your snippet within Xcode. 
 
 ### Locations
 
