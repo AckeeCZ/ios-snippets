@@ -55,9 +55,10 @@ Use the `snake_case`notation or `camelCase` as abbreviations. because **-**
 will not work with Xcode code completion feature
 
 ## Forking this repository 
-If you woul like to use our fastfile script and repo scheme within your team we would be happy to know what it helped to someone. drop us a tweet at @ackeecz or leave a star here on Github. BTW we would also like to know what snippets you use!
+If you woul like to use our fastfile script and repo scheme within your team we would be happy to know what it helped to someone. drop us a tweet at [@ackeecz][2] or leave a star here on Github. BTW we would also like to know what snippets you use!
 
 ## Sharing is caring
-This tool and repo has been opensourced within our #sharingiscaring action when we have decided to opensource our internal projects
+This tool and repo has been opensourced within our `#sharingiscaring` action when we have decided to opensource our internal projects
 
 [1]:	https://github.com/fastlane/fastlane
+[2]:	https://twitter.com/AckeeCZ
