@@ -37,6 +37,7 @@ lane :upload_all_snippets do |options|
 		FileUtils.cp src_snippet_path, dest_path
 	  	UI.message "Copying snippet #{val}"
 	end
+ 	sh "git add ."
  	sh "git commit -am \"added all snippets\""
 
 end
