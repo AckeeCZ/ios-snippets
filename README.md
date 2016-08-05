@@ -1,4 +1,4 @@
-![http://img.ack.ee/default/image/test/ios_snippets_logo.png]
+![](http://img.ack.ee/default/image/test/ios_snippets_logo.png)
 # Ackee iOS Swift Snippets for Xcode with Fastlane support
 
 This repository is both library of useful swift snippets for Xcode and small yet elegant tool for sharing snippets with your colleagues. 
