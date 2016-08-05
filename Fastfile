@@ -1,3 +1,7 @@
+before_all do
+	skip_docs
+end
+
 
 desc "Installs xcode code snippets"
 lane :install do
@@ -22,7 +26,7 @@ lane :install do
       end
  end
 
-desc "Upload snippet"
+desc "Upload snippet with key"
 lane :upload_snippet do |options| 
 
 	dest_dir = File.expand_path(File.dirname(__FILE__))
@@ -47,6 +51,7 @@ lane :upload_snippet do |options|
 	end
 end
 
+desc "Upload all snippets"
 lane :upload_all_snippets do |options| 
 
 	dest_dir = File.expand_path(File.dirname(__FILE__))
