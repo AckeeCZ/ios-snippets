@@ -42,7 +42,7 @@ lane :upload_snippet do |options|
 	  	dest_path = "#{dest_dir}/snippets/#{key}.codesnippet"
 	  	source = get_info_plist_value(path: src_snippet_path, key: "IDECodeSnippetContents")
 	  	FileUtils.cp src_snippet_path, dest_path
-	  	File.open("#{dest_dir}/#{val}.swift", 'w') { |file| file.write(source) }
+	  	File.open("#{dest_dir}/sources/#{val}.swift", 'w') { |file| file.write(source) }
 	  	UI.message "Copying snippet #{key}"
 	  	sh "git commit -am \"added #{key}\""
 	  	push_to_git_remote
