@@ -51,7 +51,7 @@ We use for most of the snippets our ack prefix which makes it easier for us. If 
 If you will fork this repo feel free to name the snippets whatever you want (we are kind we know it)
 
 ### CamelCase or snake_case
-Use the `snake_case`notation or `camelCase` as abbreviations. because _-_
+Use the `snake_case`notation or `camelCase` for Xcode shortcuts. because ` - `
 will not work with Xcode code completion feature
 
 ## Forking this repository 
