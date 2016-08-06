@@ -44,6 +44,32 @@ If you dont trust us you can manually copy files from `snippets` folder to
 /Library/Developer/Xcode/UserData/CodeSnippets
 ```
 
+### Fastlane support 
+
+You can add install support right into your current project adding this lane to your Fastfile
+```ruby
+desc "Installs xcode code snippets"
+  lane :snippets do
+  	repo = "https://github.com/AckeeCZ/ios-snippets.git" #change with your repo 
+    FileUtils.rm_rf "/tmp/snippets"      
+    install_dir = File.expand_path("~/Library/Developer/Xcode/UserData/CodeSnippets")
+    if ! File.exists? install_dir
+        UI.message "Creating Code Snippets Xcode directory #{install_dir}"
+        FileUtils.mkdir_p install_dir
+    end
+    sh "git clone #{repo} /tmp/snippets"
+    src_dir = File.expand_path("/tmp/snippets/snippets/")
+    code_snippets =  Dir.entries(src_dir).select{ |e| File.extname(e) == ".codesnippet"  }
+    code_snippets.select.each do |snippet|
+      src_snippet_path = "#{src_dir}/#{snippet}"
+
+      UI.message "Installing code snippet #{snippet}"
+      FileUtils.cp_r src_snippet_path, install_dir
+    end
+  end
+  ```
+
+
 
 ## Naming
 We use for most of the snippets our ack prefix which makes it easier for us. If you want to contribute to this repository please follow this guideline. 
@@ -51,7 +77,7 @@ We use for most of the snippets our ack prefix which makes it easier for us. If 
 If you will fork this repo feel free to name the snippets whatever you want (we are kind we know it)
 
 ### CamelCase or snake_case
-Use the `snake_case`notation or `camelCase` for Xcode shortcuts. because ` - `
+Use the `snake_case`  or `camelCase` notation for Xcode shortcuts. because ` - `
 will not work with Xcode code completion feature
 
 ## Forking this repository 
