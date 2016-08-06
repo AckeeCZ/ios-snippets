@@ -9,7 +9,7 @@ We will be happy if you will use it either way.
 In the root you will find 
 - Readme (no shit sherlock) 🙄
 - Fastfile 
-- Swift version of each snippet (just for easier readability)
+- Sources folder containing Swift version of each snippet (just for easier readability)
 - Snippets folder (where actual snippets for xcode are located)
 
 ## Usage 
