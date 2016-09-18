@@ -38,16 +38,40 @@ module Fastlane
             FileUtils.mkdir_p install_dir
         end
 
+        #Collect names and paths of existing snippets
+        installed_snippets = Hash.new
+
+        Dir.entries(install_dir).select{ |e| File.extname(e) == ".codesnippet"  }.each do |path| 
+          full_path = File.join(install_dir, path)
+          installed_snippets[full_path] = snippet_prefix(full_path)
+        end
+
+
+
         code_snippets =  Dir.entries(src_dir).select{ |e| File.extname(e) == ".codesnippet"  }
         
         code_snippets.select.each do |snippet|
           src_snippet_path = File.join(src_dir, snippet)
+          prefix = snippet_prefix(src_snippet_path)
+
+          #Have to remove snippets with the same abbr, otherwise xcode will crash
+          installed_snippets.each do |path, value|
+            if value == prefix and File.basename(src_snippet_path) != File.basename(path)
+              UI.important "Conflicting snippet #{prefix} found, removing to prevent Xcode crash on start"
+              FileUtils.remove(path)
+            end
+          end
+
 
           UI.message "Installing code snippet #{snippet}"
           FileUtils.cp_r src_snippet_path, install_dir
         end
         
         UI.success "Successfully installed #{code_snippets.count} snippets into Xcode"
+      end
+
+      def self.snippet_prefix(path)
+        FastlaneCore::CommandExecutor.execute(command: "/usr/libexec/PlistBuddy -c \"Print :IDECodeSnippetCompletionPrefix\" #{path}", print_all: false)
       end
 
       #####################################################
