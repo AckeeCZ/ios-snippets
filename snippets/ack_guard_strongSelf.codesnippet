@@ -9,7 +9,7 @@
 		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>guard let strongSelf = self else { return }</string>
+	<string>guard let `self` = self else { return }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>A84B4306-87F1-435A-A97B-25185894B78C</string>
 	<key>IDECodeSnippetLanguage</key>
