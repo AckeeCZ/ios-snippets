@@ -1,1 +1,1 @@
-guard let strongSelf = self else { return }
+guard let `self` = self else { return }
