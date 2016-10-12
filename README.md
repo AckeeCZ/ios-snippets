@@ -49,7 +49,7 @@ fastlane upload_snippet key:xcode-abbr
 
 If you dont trust us you can manually copy files from `snippets` folder to 
 ```
-/Library/Developer/Xcode/UserData/CodeSnippets
+~/Library/Developer/Xcode/UserData/CodeSnippets
 ```
 
 ### Fastlane support 
