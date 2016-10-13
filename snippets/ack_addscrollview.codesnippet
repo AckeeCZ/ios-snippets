@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ack_addscrollview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// ----- Scroll View -----
+let scrollView = UIScrollView()
+    &lt;#superview#&gt;.addSubview(scrollView)
+    scrollView.snp.makeConstraints { make in
+    make.edges.equalTo(view)
+}
+        
+// ----- Content View -----
+let contentView = UIView()
+scrollView.addSubview(contentView)
+contentView.snp.makeConstraints { make in
+    make.edges.equalTo(scrollView)
+    make.width.equalTo(scrollView)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6273192D-1801-48A4-B38F-244DBD315579</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Add Scrollview &amp; Content View</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
