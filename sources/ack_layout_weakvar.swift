@@ -1,1 +1,0 @@
-weak var <#name#>: <#type#>!

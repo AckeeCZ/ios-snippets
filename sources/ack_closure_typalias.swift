@@ -1,1 +1,0 @@
- typealias <#ClosureName#> = (<#arguments#>) -> <#return value#>
