@@ -88,5 +88,13 @@ If you would like to use our fastlane actions and our repo scheme within your te
 ## Sharing is caring
 This tool and repo has been opensourced within our `#sharingiscaring` action when we have decided to opensource our internal projects
 
+## Author
+
+[Ackee](www.ackee.cz) team
+
+## License
+
+iOS snippets are available under the MIT license. See the LICENSE file for more info.
+
 [1]:	https://github.com/fastlane/fastlane
 [2]:	https://twitter.com/AckeeCZ
