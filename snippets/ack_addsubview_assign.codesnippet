@@ -12,7 +12,7 @@
 	<string>// ----- &lt;#name#&gt; -----
 let aView = &lt;#type#&gt;()
 &lt;#superview#&gt;.addSubview(aView)
-aView.snp_makeConstraints { make in
+aView.snp.makeConstraints { make in
     &lt;#code#&gt;
 }
 self.&lt;#name#&gt; = aView</string>

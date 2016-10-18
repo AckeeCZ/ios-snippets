@@ -12,7 +12,7 @@
 	<string>// ----- Stack View -----
 let stackView = UIStackView(arrangedSubviews: &lt;#T##[UIView]#&gt;)
 &lt;#superview#&gt;.addSubview(stackView)
-stackView.snp_makeConstraints { make in
+stackView.snp.makeConstraints { make in
     &lt;#code#&gt;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

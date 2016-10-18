@@ -9,8 +9,8 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) { () -&gt; Void in
-            
+	<string>DispatchQueue.main.asyncAfter(deadline: .now() + &lt;#seconds#&gt;) {
+            &lt;#code#&gt;
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F03B55A6-FFC6-462C-9DED-91112ED93486</string>
@@ -21,6 +21,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

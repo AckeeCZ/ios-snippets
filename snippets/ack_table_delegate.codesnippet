@@ -9,30 +9,31 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extension &lt;#Class#&gt; : UITableViewDelegate {
-    //MARK: UITableViewDelegate
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+	<string>//MARK: UITableView delegate
+extension &lt;#Class#&gt;: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        &lt;#code#&gt;
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
         return &lt;#height#&gt;
     }
     
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -&gt; CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -&gt; CGFloat {
         return &lt;#height#&gt;
     }
     
-    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -&gt; CGFloat {
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -&gt; CGFloat {
         return &lt;#height#&gt;
     }
     
-    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -&gt; UIView? {
-        
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -&gt; UIView? {
+        &lt;#code#&gt;
     }
     
-    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -&gt; UIView? {
-        
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -&gt; UIView? {
+        &lt;#code#&gt;
     }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -40,10 +41,10 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Table Delegat</string>
+	<string>Table Delegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

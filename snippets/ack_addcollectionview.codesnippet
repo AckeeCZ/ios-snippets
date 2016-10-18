@@ -10,11 +10,11 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>// ----- &lt;#name#&gt; -----
-let collectionView = UICollectionView(frame:CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout())
+let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
 collectionView.delegate = self
 collectionView.dataSource = self
 &lt;#superview#&gt;.addSubview(collectionView)
-collectionView.snp_makeConstraints { make in
+collectionView.snp.makeConstraints { make in
     &lt;#code#&gt;
 }
 self.collectionView = collectionView</string>

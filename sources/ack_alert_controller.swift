@@ -1,5 +1,3 @@
- let alert = UIAlertController(title: <#title#>, message: <#message#>, preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
-            alert.dismissViewControllerAnimated(true, completion: nil)
-        }))
-        presentViewController(alert, animated: true, completion: nil)
+let alert = UIAlertController(title: <#title#>, message: <#message#>, preferredStyle: .alert)
+alert.addAction(UIAlertAction(title: <#confirm#>, style: .default, handler: nil))
+present(alert, animated: true, completion: nil)

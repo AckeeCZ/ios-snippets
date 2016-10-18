@@ -1,21 +1,23 @@
-extension <#Class#> : UITableViewDataSource {
-    //MARK: UITableViewDataSource
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return <#numberOfSections#>
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return <#numberOfRows#>
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(<#identifier#>, forIndexPath: indexPath) as! UITableViewCell
-        configureCell(cell, forRowAtIndexPath: indexPath)
-        return cell
-    }
-    
-    func configureCell(cell: UITableViewCell, forRowAtIndexPath: NSIndexPath) {
-        
-    }
+//MARK: UITableView data source
+extension <#Class#>: UITableViewDataSource {
+
+func numberOfSections(in tableView: UITableView) -> Int {
+return <#code#>
+}
+
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+return <#code#>
+}
+
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+let cell = tableView.dequeueReusableCell(withIdentifier: <#identifier#>, for: indexPath)
+
+configureCell(cell: cell, forRowAt: indexPath)
+
+return cell
+}
+
+func configureCell(cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+<#code#>
+}
 }

@@ -9,31 +9,13 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//MARK: Collection View Delegate
-extension &lt;#controller#&gt;: UICollectionViewDelegate {
+	<string>// MARK: UICollectionView delegate
+extension &lt;#Class#&gt;: UICollectionViewDelegate {
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -&gt; Int {
-        return &lt;#numberOfSections#&gt;
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        &lt;#code#&gt;
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {
-        return &lt;#numberOfItems#&gt;
-    }
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -&gt; UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(&lt;#identifier#&gt;, forIndexPath: indexPath) as! UICollectionViewCell
-        configureCell(cell, forItemAtIndexPath: indexPath)
-        return cell
-    }
-    
-    func configureCell(cell: UICollectionViewCell, forItemAtIndexPath: NSIndexPath) {
-        
-    }
-    
-    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -&gt; UICollectionReusableView {
-        let view =  collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: &lt;#identifier#&gt;, forIndexPath: indexPath) as! UIView
-        return view
-    }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>72AABA8B-C24A-4BFB-B227-89CAAF49F90B</string>

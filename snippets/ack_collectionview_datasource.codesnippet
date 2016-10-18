@@ -9,17 +9,18 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//MARK: Collection View Data Source
-extension &lt;#controlller#&gt;: UICollectionViewDataSource{
+	<string>// MARK: UICollectionView data source
+extension &lt;#Class#&gt;: UICollectionViewDataSource{
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -&gt; UICollectionViewCell {
+    func collectionView(_ cellForItemAtcollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -&gt; UICollectionViewCell {
         &lt;#code#&gt;
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {
         &lt;#code#&gt;
     }
-}</string>
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1304DE0E-0EFB-48F5-9D86-85E78DA99892</string>
 	<key>IDECodeSnippetLanguage</key>

@@ -9,10 +9,11 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#button#&gt;.addEventHandler({ [weak self] _ in
-    guard let strongSelf = self else { return }
-    &lt;#code#&gt;
-}, forControlEvents: .TouchUpInside)</string>
+	<string>&lt;#button#&gt;.on(.touchUpInside) { [weak self] sender in
+            guard let `self` = self else { return }
+            
+            &lt;#code#&gt;
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>052A1418-FB5B-4381-9ABC-A43232547F2F</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -22,6 +23,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

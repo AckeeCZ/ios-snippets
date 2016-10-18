@@ -1,0 +1,1 @@
+fileprivate var performOnceClosure: () = { <#code#> }()
