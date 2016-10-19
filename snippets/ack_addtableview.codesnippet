@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ack_addtableview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// ----- Table View -----
+        let tableView = UITableView()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight =  UITableViewAutomaticDimension
+        tableView.separatorColor = .clearColor()
+        tableView.tableFooterView = UIView(frame: .zero)
+        view.addSubview(tableView)
+        tableView.snp_makeConstraints { make in
+            make.edges.equalTo(0)
+        }
+        self.tableView = tableView</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DD0A973D-E9FE-41DF-959A-18B6B7CBEB5A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Add table view</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
